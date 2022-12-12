@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// ex : 球陣列中的最大值，[2,6,1,77,52,25,7]
+			// 這裡的max 不要設為0 ，原因為如果陣列中全是負數，那麼就會出錯，所以先預設max 為陣列中的第一個數
+			let arr = [2, 6, 1, 77, 52, 25, 7];
+			let max = arr[0];
+			for (let i = 0; i < arr.length; i++) {
+				if (max - arr[i] < 0) {
+					max = arr[i];
+				} else {
+					continue;
+				}
+			}
+			console.log(max);
+		</script>
+	</head>
+	<body></body>
+</html>

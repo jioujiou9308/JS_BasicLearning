@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// console.log(name); //部會顯示錯誤
+
+			var apple1 = '青蘋果1號';
+			var apple2 = '紅蘋果2號';
+			console.log(apple1, apple2);
+			// apple1 = '紅蘋果2號';
+			// apple2 = '青蘋果1號';
+			// console.log(apple1, apple2);
+
+			// 這樣沒辦法，除非我們宣告一個臨時變數
+			var a;
+			a = apple1;
+			apple1 = apple2;
+			apple2 = a;
+			console.log(apple1);
+			console.log(apple2);
+		</script>
+	</head>
+	<body>
+		<p>可允許$ - 這兩種符號開頭，但不允許&開頭</p>
+	</body>
+</html>

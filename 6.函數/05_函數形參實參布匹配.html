@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 函數形參實參布匹配的話呢
+			function sum(num1, num2) {
+				console.log(num1 + num2);
+			}
+			sum();
+			// 1. 如果實參的個數和形參的個數一致，則正常輸出結果
+			sum(1, 2);
+			// 2. 如果實參個個數多於形參的個數-會取道形參的個數
+			sum(1, 2, 3);
+			// 3. 如果實參個個數小於形參的個數
+			// 刑參可以看做是不用聲明的變數
+			// num2 是一個變數但沒有接受值，結果就是undefined
+			sum(1); //NaN
+			sum('哈哈'); //哈哈undefined
+		</script>
+	</head>
+	<body></body>
+</html>

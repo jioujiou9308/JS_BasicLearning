@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// for 循環可以重複執行不同代碼，因為我們有計數器變量i的存在，i每次循環值都會變換
+			// 我們想要輸出1個仁 1~100歲
+			// for (let i = 1; i <= 100; i++) {
+			// 	console.log('這個人今年' + i + '歲了');
+			// }
+
+			//
+			for (var i = 1; i <= 100; i++) {
+				if (i == 1) {
+					console.log('這個人今天1歲了');
+				} else if (i == 100) {
+					console.log('這個人今天100歲了，她死了');
+				} else {
+					console.log('這個人今年' + i + '歲了');
+				}
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

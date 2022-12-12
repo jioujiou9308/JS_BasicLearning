@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// ex : 將陣列['red','green','blue','pink'] 轉換為字串，並且用|分割，輸出成'red|green|blue|pink
+			let arr = ['red', 'green', 'blue', 'pink'];
+			str = '';
+			for (let i = 0; i < arr.length; i++) {
+				str = str + arr[i] + '|';
+			}
+			console.log(str);
+
+			let arr2 = arr.join('|');
+			console.log(arr2);
+			console.log(typeof arr2);
+		</script>
+	</head>
+	<body></body>
+</html>

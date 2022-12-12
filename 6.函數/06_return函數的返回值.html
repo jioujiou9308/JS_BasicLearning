@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<script>
+			// 1.函數是做某件事或者實線某種功能
+			function cook(aru) {
+				console.log(aru);
+			}
+			cook('大肘子');
+			// 2. 函數的返回值格式
+			/*
+            function 函數名(){
+                return 需要返回的結果;
+            }
+            函數名()
+            (1) 我們函數只是實線某種功能，最終的結果需要返回給函數的調用者(函數名())，通過return來實現
+            (2) 只要函數遇到return 就把後面的結果返回給函數的調用者 - 函數名() = return 後面的結果
+            */
+
+			// 3. 代碼驗證
+			function getResult() {
+				return 666;
+			}
+			getResult(); // 這個retur 相當於把值賦予給getResult() =>  getResult() = 666
+			// 所以要顯示結果要
+			console.log(getResult());
+		</script>
+	</head>
+	<body>
+		<h3>return 語句</h3>
+		<p>有的時候，我們會希望函數僵直返回诶調用者，此時通過使用return 語句就可以實現</p>
+	</body>
+</html>

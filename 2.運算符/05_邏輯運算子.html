@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 1. 邏輯&& 兩側為true 才是true ，只要有一側為false就為false
+			console.log(3 > 5 && 3 > 2); //false
+			console.log(3 < 5 && 3 > 2); //true
+			console.log('cat' && 'dog'); // dog
+			console.log(3 < 5 && 'dog'); // dog
+			console.log('dog' && 3 < 5); // true
+			console.log('-------------------------');
+
+			//  2. 邏輯|| 只要有一側為true 結果就是true
+			console.log(3 > 5 || 3 > 2); //true
+			console.log(3 > 5 || 3 < 2); //false
+			console.log('cat' || 'dog'); // cat
+			console.log(10 < 2 || 'dog'); // dog
+			console.log('dog' || 10 < 2); // dog
+			console.log('-------------------------');
+
+			//  3. 邏輯 非 not !
+			console.log(!true); //false
+		</script>
+	</head>
+	<body>
+		<p>邏輯運算子是用來進行boolean值運算的運算符，其返回值也是boolean，後面開發中經常用於多個條件判斷</p>
+		<ul>
+			<li>&&</li>
+			<li>||</li>
+			<li>!</li>
+		</ul>
+	</body>
+</html>

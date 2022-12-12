@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 1. switch 語句也是多分支語句 ，可以持線多選1
+			// 2.語法結構 switch 轉換、開關
+			/*
+            switch('表達式'){
+			    case valu1:
+			        執行語句1;
+			        break;
+			    case value2:
+			        執行語句2;
+			        break
+			    // ...
+			    default:
+			        執行最後的語句;
+
+			}
+            */
+			// 3. 執行思路 : 利用我們的表達式的值和case後面的選項值鄉匹配，如果匹配上，就執行該case，如果都沒有匹配上，那麼就執行default裡面的語句
+			var num = prompt('請輸入數字');
+			switch (num) {
+				case '1':
+					console.log('這是一');
+					break;
+				case 2:
+					console.log('這是二');
+					break;
+				case 3:
+					console.log('這是三');
+					break;
+				default:
+					console.log('沒有匹配結果');
+			}
+			// 用來針對特定值來使用
+		</script>
+	</head>
+	<body></body>
+</html>

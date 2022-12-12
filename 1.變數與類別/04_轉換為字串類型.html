@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 1. 把數字型轉匯為字串
+			var num = 10;
+			var str = num.toString();
+			console.log(str);
+			console.log(typeof str);
+
+			// 2. 利用 String
+			console.log(String(num));
+			console.log(typeof num);
+			console.log(typeof String(num));
+
+			// 3. 利用 + 拼接字串的方法實現轉換效果
+			// 稱為隱式轉換
+			console.log(num + '');
+			console.log(typeof (num + ''));
+		</script>
+	</head>
+	<body>
+		<h1>把一種數據變亮轉換成另外一種數據類型</h1>
+		<ul>
+			轉換為字串的方法
+			<li>toString()</li>
+			<li>String</li>
+			<li>家拼接字串</li>
+		</ul>
+	</body>
+</html>

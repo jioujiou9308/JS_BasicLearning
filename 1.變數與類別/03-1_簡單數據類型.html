@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>簡單數據類型</title>
+		<script>
+			// 數字類型
+			// 1. 數字類型的最大值
+			console.log(Number.MAX_VALUE);
+			// 2. 數字的最小值
+			console.log(Number.MIN_VALUE);
+			// 3. 無窮大
+			console.log(Number.MAX_VALUE * 2); //Infinity
+			// 4. 無窮小
+			console.log(-Number.MAX_VALUE * 2); //-Infinity
+			// 5. 非數字
+			console.log('老師' - 100); // NaN
+			// isNaN() 這個方法用來判斷非數字，並返回一個值，如果是數字返回的 false ， 如果不是數字則返回 true
+			console.log(isNaN(12)); // false
+			console.log(isNaN('老王')); // true
+		</script>
+	</head>
+	<body>
+		<p>簡單數據類型有五種</p>
+		<li>Number</li>
+		<li>Boolean</li>
+		<li>String</li>
+		<li>Undefined</li>
+		<li>Null</li>
+	</body>
+</html>

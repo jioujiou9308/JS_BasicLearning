@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			//  如何新增陣列中的長度
+			// 1. 新增陣列元素，直接修改陣列的 length 長度
+			let arr = ['red', 'blue', 'green'];
+			arr.length = 5;
+			console.log(arr);
+			console.log(arr[3]); // undefined
+			console.log(arr[4]); // undefined
+
+			// 2. 新增陣列元素，修改索引值，追加數組元素
+			let arr1 = ['red', 'blue', 'green'];
+			arr1[3] = 'pink';
+			console.log(arr1);
+			arr1[5] = 'hotpink';
+			console.log(arr1);
+			arr1[0] = 'yellow'; //這裡是直接覆蓋原來的陣列元素
+			console.log(arr1);
+			arr1 = '有點東西';
+			console.log(arr1); //千萬不要直接給陣列賦值，否則裡面的陣列元素都會沒有
+
+			// ex : 新建一個陣列，裡面存放10個整數
+
+			let arr3 = [];
+			for (let i = 0; i < 10; i++) {
+				arr3[i] = i + 1;
+			}
+			console.log(arr3);
+		</script>
+	</head>
+	<body></body>
+</html>

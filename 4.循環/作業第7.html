@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 2. 接收用戶的用戶名還有密碼，若用戶名為admin 密碼為123456，則提示用戶登入成功，否則讓用戶一直輸入
+
+			let account = prompt('請輸入帳號');
+			let password = prompt('請輸入密碼');
+
+			while (account != 'admin' || password != '123456') {
+				alert('帳號或密碼輸入錯誤，請重新輸入');
+				account = prompt('請輸入帳號');
+				password = prompt('請輸入密碼');
+			}
+			alert('登入成功');
+		</script>
+	</head>
+	<body></body>
+</html>

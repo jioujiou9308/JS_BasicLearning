@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 9. 簡易atm
+			// - 裡面線存有100塊錢
+			// - 如果存錢，就用輸入前述加上現有金額，之後彈出顯示的餘額
+			// - 如果取錢就減去取出的金額，之後再談出現有餘額
+			// - 如果3.顯示餘額，舊書出餘額
+			// - 如果選擇退出，則退出信息框
+
+			let money = 100;
+			let i = true;
+			while (i) {
+				let question = prompt('請輸入要操作的數字\n1.存錢\n2.取錢\n3.顯示餘額\n4.退出');
+				switch (question) {
+					case '1':
+						let addMoney = Number(prompt('請問要存多少錢'));
+						money = money + addMoney;
+						alert('目前餘額為:' + money + '元');
+						break;
+					case '2':
+						let takeMoney = Number(prompt('請問要取出多少錢'));
+						if (takeMoney > money) {
+							alert('餘額不足請重新輸入');
+							break;
+						} else {
+							money = money - takeMoney;
+							alert('目前餘額為:' + money + '元');
+							break;
+						}
+					case '3':
+						alert('目前餘額為:' + money + '元');
+						break;
+						4;
+					case '4':
+						alert('正在退出提款機');
+						i = false;
+						break;
+					default:
+						alert('請輸入正確操作指令');
+						break;
+				}
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// ex: 將數組 [2,0,6,1,77,0,52,0,25,7]中大於等於10的元素選出來放入新數組中
+			let arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+			let arr2 = [];
+			let j = 0;
+			// 方法三
+			// arr2.length - 因為arr2.length = 0
+			for (let i = 0; i < arr.length; i++) {
+				if (arr[i] >= 10) {
+					// 方法一
+					// arr2.push(arr[i]);
+					// 方法二
+					arr2[j] = arr[i];
+					j++;
+					// 方法三、用arr2.length
+					// arr2[arr2.length] = arr[i]
+				}
+			}
+			console.log(arr2);
+		</script>
+	</head>
+	<body></body>
+</html>

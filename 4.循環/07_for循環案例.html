@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			let totalPeople = prompt('請輸入班級學生人數');
+			let totalScore = 0;
+			for (let i = 1; i <= totalPeople; i++) {
+				let score = Number(prompt(`請輸入第${i}位學生的分數`));
+				totalScore += score;
+			}
+			let average = totalScore / totalPeople;
+			alert(`班級平均分數為${average}`);
+		</script>
+	</head>
+	<body>
+		<p>1.讓用戶輸入班級學生 2.上用戶分別輸入班級學生之成績 3.最後彈出班級學生成績之平均值</p>
+	</body>
+</html>

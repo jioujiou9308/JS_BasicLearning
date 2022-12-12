@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 1. 我們的boolean參與的邏輯運算為 true && false = false
+			// 2. 123 && 456是值 或者是 表達是參與邏輯運算?
+			// 3. 邏輯與短路運算，如果表達1結果為真，則返回表達室2，如果表達式1為假，那麼反為表達式1
+			console.log('cat' && 0); // 0
+			console.log('cat' && 123); // 123
+			console.log(0 && 123); //0
+			console.log(0 && 1 + 2 && 45 * 6561); //0
+			console.log(3 < 5 && 'dog'); // dog
+
+			// 如果有空的或是否定的為假 其餘真的  0 " " null undefined NaN
+			// 4.邏輯或  短路運算 如果表達式1結果為真，則返回表達式1，如果表達式1結果為假，則返回表達式2
+			console.log(123 || 456); //123
+			console.log(123 || 456 || 789 + 2132); //123
+
+			//  範例  邏輯中斷很重要，會影響程序結果
+			var num = 0;
+			console.log(123 || num++); //123
+			console.log(num); // 0 因為前面只執行123 後面的num++已經中斷了
+		</script>
+	</head>
+	<body>
+		<p>短路運萬的原理:</p>
+		<p>當有多個表達式(值)時，左邊的表達是可以確定結果時，就不再繼續院算又變得表達式值</p>
+	</body>
+</html>

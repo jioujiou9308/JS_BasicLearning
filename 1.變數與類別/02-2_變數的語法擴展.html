@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 1. 更新變數
+			var myname = '我小紅';
+			console.log(myname);
+			myname = '是小黃拉';
+			console.log(myname);
+
+			// 2. 聲明多個變數
+			var age = 18,
+				address = '桃園',
+				gz = 20000;
+
+			// 3. 聲明變亮的特殊情況
+			// 3.1 聲明不賦予值 結果是?
+			var sex;
+			console.log(sex); // undefined(為定義的)
+			// 3.2 不聲明不負值，會報錯誤 -> tel is not defined
+			// console.log(tel);
+
+			// 3.3 不聲明直接賦予值使用，在js是可以得但不建議
+			qq = 110;
+			console.log(qq);
+		</script>
+	</head>
+	<body></body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 函數是可以互相調用的
+			function fn1() {
+				console.log(11);
+				fn2(); // 在fn1裡面調用了fn2()的函數
+			}
+			fn1(); // 11  22
+			function fn2() {
+				console.log(22);
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
+111 222 fn2 fn1

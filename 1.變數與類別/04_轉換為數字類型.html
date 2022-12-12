@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// var age = prompt('請輸入你的年齡');
+
+			// 1. parseInt(變數) 可以把字串轉為數字，但是得到的是整數 ，相當於無條件捨去
+			// console.log(parseInt(age));
+			// console.log(typeof parseInt(age));
+
+			console.log(parseInt('3.14')); // 3
+			console.log(parseInt('3.99')); // 3
+			console.log(parseInt('150px吃飯嗎524')); // 150 會去掉px的單位
+			console.log(parseInt('rem150px吃飯嗎524')); // NaN
+
+			// 2. parseFloat(變數) 可以把字串轉為數字，得到的是全部數值，包含小數
+			console.log(parseFloat('3.14')); // 3.14
+			console.log(parseFloat('3.99')); // 3.99
+			console.log(parseFloat('150px')); // 150
+			console.log(parseFloat('em150px吃飯嗎')); // NaN
+
+			//  3. 利用 Number(變數)
+			var str = '123';
+			console.log(Number(str)); //123
+			console.log(Number('12')); //12
+
+			// 4. 利用算術運算 -  * /  隱式轉換
+			console.log('12' - 0); // 12
+			console.log('12' * 1); // 12
+			console.log('123' - '120'); // 3
+		</script>
+	</head>
+	<body>
+		<h1>把一種數據變亮轉換成另外一種數據類型</h1>
+		<ul>
+			轉換為數字
+			<li>parseInt(string) - 只會呈現整數</li>
+			<li>parseFloat(string)</li>
+			<li>Number()強制轉換函數</li>
+			<li>js　隱式轉換( - * / )</li>
+		</ul>
+	</body>
+</html>

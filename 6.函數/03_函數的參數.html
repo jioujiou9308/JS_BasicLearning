@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 1. 函數可以重複相同代碼
+			function cook() {
+				console.log('酸辣土豆斯');
+			}
+			cook();
+			cook();
+
+			// 2. 我們可以利用函數的參數實現函數重複不同的代碼
+			// function 函數名(形參1,形參2...){ //在聲明函數的小括號裡的是形參(形式上的參數)
+			// }
+			// 函數名(實參1,實參2...) //在函數調用的小括號裡面是實參(實際參數)
+
+			// 3. 形參和實參的執行過程
+			function cook(aru) {
+				console.log(aru);
+			}
+			cook('酸辣土豆斯');
+			cook('大肘子');
+
+			// 4.參數不限數量，可以有也可以沒有
+		</script>
+	</head>
+	<body></body>
+</html>

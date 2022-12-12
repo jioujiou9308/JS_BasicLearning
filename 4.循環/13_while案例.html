@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// while 循環案例
+			// 1. 打印出人的一生，從一歲到100歲
+			let num = 1;
+			while (num <= 100) {
+				console.log('這個人今年:' + num + '歲了');
+				num++;
+			}
+
+			// 2. 計算1~100之間所有整數的何
+			let sum = 0;
+			let j = 1;
+			while (j <= 100) {
+				sum += j;
+				j++;
+			}
+			console.log(sum);
+			// while 可以做更複雜的條件判斷
+
+			// 3. 彈出一個提示框，你愛我們? 如果輸入我愛你，提示就結束，否則，一職詢問
+			let message = prompt('你愛我嗎?');
+			while (message !== '我愛你') {
+				message = prompt('你愛我嗎?');
+			}
+			alert('我也愛你');
+		</script>
+	</head>
+	<body></body>
+</html>

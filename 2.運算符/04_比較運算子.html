@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			console.log(3 >= 5); //false
+			console.log(6 >= 4); //true
+			// 1. 我們 程序裡面的等於富號 是 == 默認轉換數據類型，會把字串型的數據轉匯成數字型，指要求值相等就可以
+			console.log(3 == 5); //fase
+			console.log('pink' == '劉德華'); // false
+			console.log(18 == 18); // true
+			console.log(18 == '18'); //true
+			console.log(18 != 18); //false
+			// 2. 有個比較稱為全等，一模一樣 要求兩側的值還有數據類型完全依值才可以稱為true
+			console.log(18 === 18); // true
+			console.log(18 === '18'); // false
+			console.log(18 !== '18'); //true
+		</script>
+	</head>
+	<body>
+		<p>又稱為關係運算子， 兩個數據進行比較時所使用的運算子，會返回一個boolean</p>
+	</body>
+</html>

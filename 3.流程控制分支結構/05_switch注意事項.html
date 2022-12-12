@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// switch注意事項
+
+			// 1.開發中，表達式經常寫成變數帶入
+			// 2.我們num的值和case裡面的值鄉匹配的時候是全等的(===)
+			// 3.如果當前的case裡面沒有break則不會退出switch是繼續執行下一個case
+
+			// ex 用入再抬出框裡面輸入一個水果，如果有就彈出該水果的嫁個，如果沒有該水果就彈出'沒有此水果'
+			var fruit = prompt('請輸入水果名稱');
+			switch (fruit) {
+				case '香蕉':
+					alert('100元');
+					break;
+				case '蘋果':
+					alert('200元');
+					break;
+				default:
+					alert('沒有此水果');
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

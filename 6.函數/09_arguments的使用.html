@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// arguments 的使用 - 只有函數才有arguments 對象，而且每個函數都有內痔好這個arguments
+			function fn() {
+				console.log(arguments); //裡面存除了所有傳遞過來的參數
+				console.log(arguments.length);
+				console.log(arguments[1]);
+				// 也可以用for 迴圈去取出裡面的值
+			}
+			fn(1, 2, 3);
+		</script>
+	</head>
+	<body>
+		<h3>arguments 的使用</h3>
+		<p>當不確定有多少個傳遞參數實，就可以用arguments 來獲取 arguments 對象中存除了傳遞的所有參數</p>
+		<p>arguments展示是一個偽陣列的方式，並有以下特點</p>
+		<ul>
+			<li>具有length屬性</li>
+			<li>案索引方式儲存數據</li>
+			<li>不具有數組的push,pop等方法</li>
+		</ul>
+	</body>
+</html>

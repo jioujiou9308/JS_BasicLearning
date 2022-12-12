@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			var flag = true;
+			var flag1 = false;
+			console.log(flag + 1); // 2 true 參與家法運算當來看
+			console.log(flag1 + 1); //1  false 參與家法運算當0來看
+
+			//  如果一個變亮聲明未賦予值，就是undefined 為定義數據類型
+			var str;
+			console.log(str); //undefined
+			var variable = undefined;
+			console.log(variable); //undefined
+			console.log(variable + 'pink'); // undefinedpink 便字串
+			console.log(variable + 1); // NaN undefined 和數字相加，最後結果是NaN
+
+			// null 空值
+			var space = null;
+			console.log(space + 'pink'); //nullpink
+			console.log(space + 1); // 1
+			console.log(true + space); // 1
+		</script>
+	</head>
+	<body>
+		<li>只有true 與 false</li>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 1. 求 1-100 之間所有樹的平均值
+			let sum = 0;
+			for (let i = 1; i <= 100; i++) {
+				// sum += i;
+				sum = sum + i / 100;
+			}
+			console.log(sum);
+			// 2. 求1-100之間所有偶數和基數的總和
+			let odd = 0; //基數
+			let even = 0; //偶數
+			for (let i = 1; i <= 100; i++) {
+				if (i % 2 == 0) {
+					even += i;
+				} else {
+					odd += i;
+				}
+			}
+			console.log('基數和:', odd, '偶數和:', even);
+			// 3. 求1-100之間所有能被3整除的數字的和
+			var third = 0;
+			for (let i = 0; i <= 100; i++) {
+				if (i % 3 == 0) {
+					third += i;
+				}
+			}
+			console.log(third);
+		</script>
+	</head>
+	<body></body>
+</html>
