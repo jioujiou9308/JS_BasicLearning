@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 函數的兩種表達是
+			// 1. 函數陳述式(具名函式)，宣告一個函式，並且給之名稱
+			function callName() {}
+			callName();
+			// 2. 函式表達式(匿名函式)，因為是使用一個變數，並且將函式賦予到變數上。中間插入一個運算子" = "，所以等於這個function 沒有名字
+			var fun = function (aru) {
+				console.log('我是函數表達式');
+				console.log(aru);
+			};
+			fun('hello word');
+			// (1) fun 是變數名稱，不是函數名
+			// (2) 函數表達式聲明方是跟聲明變數差不多，只不過變數裡面存的是值，而函數表達式裡面存的是函數
+			// (3) 函數表達式也可以進行傳遞參數
+
+			// 延伸閱讀https://hoyis-note.coderbridge.io/2021/05/18/%E9%99%B3%E8%BF%B0%E5%BC%8F%E8%88%87%E8%A1%A8%E9%81%94%E5%BC%8F/
+		</script>
+	</head>
+	<body></body>
+</html>

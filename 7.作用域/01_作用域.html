@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 1. JavaScript 作用域(scope) : 就是代碼名字(變數)在某個飯危難起作用和效果，目的是為了提高程序的可靠性，更重要的是減少命名衝突
+
+			// 2. js的作用域(es6) 之前 : 全域作用域(Global Scope)    區域作用域(Local Scope)
+
+			// 3. 全域作用域 : 整個script 標籤，或是一個單獨的js文件
+			var num = 10;
+			var num = 20;
+			console.log(num);
+
+			// 4. 區域作用域 (函數作用域): 在函數內部就是局部作用域，這個代碼的名字只在函數內部起效果和作用
+			function fun() {
+				var num = 25;
+				console.log(num);
+			}
+			fun();
+		</script>
+	</head>
+	<body></body>
+</html>

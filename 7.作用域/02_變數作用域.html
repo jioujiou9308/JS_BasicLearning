@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 變數的作用域 : 根據作用愈的不同我們變數分全域變數 & 區域變數
+			// 1. 全域變數 : 在全域作用域下的變數，在全域下都可以使用
+			// 注意 : 如果函數內部沒有聲明直接赴值的變數也屬於全域變數
+			var num = 10; // num 就是一個全域變數
+			console.log(num); //10
+
+			function fn() {
+				console.log(num); //10
+			}
+			fn();
+
+			// 2. 區域變數 : 在區域作用域下的變數，後者在函數內部的變數就是區域變數
+			function fun() {
+				var num1 = 10;
+				num2 = 200;
+			}
+			fun();
+			// console.log(num1); //ncaught ReferenceError: num1 is not defined
+			console.log(num2);
+
+			// 3. 從執行效率來看全域變數和區域變數
+			// (1) 全域變數只有瀏覽器關閉的時候才會銷毀，比較站內存資源
+			// (2) 局部變數，當我們程序執行完畢就會銷毀，比較節約內存資源
+		</script>
+	</head>
+	<body></body>
+</html>
