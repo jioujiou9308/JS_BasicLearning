@@ -17,10 +17,16 @@
 
 			// 4. 區域作用域 (函數作用域): 在函數內部就是局部作用域，這個代碼的名字只在函數內部起效果和作用
 			function fun() {
-				var num = 25;
-				console.log(num);
+				var num25 = 25;
+				var num30 = 30;
+				num88 = 88;
+				console.log(num25); //25
+				console.log(num30); //30
 			}
+
 			fun();
+			console.log(num88);
+			console.log(num30);
 		</script>
 	</head>
 	<body></body>

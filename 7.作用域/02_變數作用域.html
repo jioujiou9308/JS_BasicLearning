@@ -13,9 +13,12 @@
 			console.log(num); //10
 
 			function fn() {
-				console.log(num); //10
+				num = 30;
+				console.log('在fn中的num:', num); //30
 			}
+			console.log('fn中的num還未重新賦值:', num); // 10
 			fn();
+			console.log('fn中的num，已經被賦予新值30:', num); //30
 
 			// 2. 區域變數 : 在區域作用域下的變數，後者在函數內部的變數就是區域變數
 			function fun() {

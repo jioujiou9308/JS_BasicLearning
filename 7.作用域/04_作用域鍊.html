@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width= , initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			//作用域鏈 : 內部函數訪問外部函數的變數，採取的是鏈式查找的方式來決定取哪個值，這種結構我們稱為作用域鏈，也是就近原則
+			var num = 10;
+
+			function fn() {
+				//外部函數
+				var num = 20;
+
+				function fun() {
+					//內部函數
+					console.log(num); //20
+				}
+				fun();
+			}
+			fn();
+			// -------------------以下範例練習 一
+			function f1() {
+				var num1 = 123;
+				function f2() {
+					console.log(num1); //123
+				}
+				f2();
+			}
+			var num1 = 456;
+			f1();
+			// var num1 = 456; 如果放在外面又沒有外層123就會undefined
+			// --------------------範例練習二
+			var a = 1;
+			function fn1() {
+				var a = 2;
+				var b = '22';
+				fn2();
+				function fn2() {
+					var a = 3;
+
+					fn3();
+					function fn3() {
+						var a = 4;
+
+						console.log(a); // a = ? 4
+						console.log(b); // b = ? 22
+					}
+				}
+			}
+			fn1();
+		</script>
+	</head>
+	<body></body>
+</html>

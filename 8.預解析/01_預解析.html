@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 1 問
+			// console.log(num); //報錯Uncaught ReferenceError: num is not defined
+
+			// 2 問
+			console.log(num); // undefined   ★  坑 1  ★
+			var num = 10;
+			// 相當於執行以下代碼
+			// var num
+			// console.log(num)
+			// num = 10
+			// 所以才是undefined
+
+			// 3 問
+			fn();
+			function fn() {
+				console.log(11);
+			}
+
+			// 4 問
+			fun(); // 報錯 Uncaught ReferenceError: Cannot access 'fun' before initialization               ★  坑 2  ★
+			var fun = function () {
+				console.log(12);
+			};
+			// 相當於執行以下代碼
+			// var fun;
+			// fun()
+			// fun = function () {console.log(12)};
+
+			//  1. 我們js引琴運行js 分為兩部 : 預解析   代碼執行
+			// 		(1) 預解析 js引勤會把js裡面所有的var 還有function 調當前的作用預的最前面
+			//		(2) 代碼執行，按照代碼書寫的順序從上往下執行
+			// 2. 預解析分為，變數預解析(變數提升) 和 函數預解析(函數提升)
+			// 		(1) 變數提升，就是把所有的變數聲明提升到當前的作用預最前面，但不提升賦值的操作
+			// 		(2) 函數提升， 就是把所有函數聲明提升到當前作用預的最前面，不用調用函數
+		</script>
+	</head>
+	<body></body>
+</html>
