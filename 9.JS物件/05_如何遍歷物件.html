@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 遍歷循環
+			var obj = {
+				uname: '張三豐',
+				age: 18,
+				sex: '男',
+				sayHi: function () {
+					console.log('hi');
+				},
+			};
+			// console.log(obj.uname);
+			// console.log(obj['sex']);
+
+			// 使用 for in 遍歷我們的對象
+			for (let key in obj) {
+				console.log(key); //key 變數 輸出得到的式 '屬性名稱'
+				console.log(obj[key]);
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

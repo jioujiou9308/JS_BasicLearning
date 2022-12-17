@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// new 關鍵字執行過程
+			// 1.new 建構函式可以在內存忠創建一個空的物件
+			// 2.this 就會指向剛才創建的空物件
+			// 3.執行建構函式裡面的代碼，給這個空物件梯家屬性和方法
+			// 4.返回這個對象，所以不用return
+			function Star(name, age, sex) {
+				(this.name = name),
+					(this.age = age),
+					(this.sex = sex),
+					(this.sing = function (sang) {
+						console.log(sang);
+					});
+			}
+			var person1 = new Star('劉德華', 18, '男');
+		</script>
+	</head>
+	<body></body>
+</html>

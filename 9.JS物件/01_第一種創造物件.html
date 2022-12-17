@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width= , initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			// 創建物件的三種方式
+			// 1. 利用物件字面量創建對象 : {}
+			var obj = {
+				uname: '張三豐',
+				age: 18,
+				sex: '男',
+				sayHi: function () {
+					console.log('hi');
+				},
+			};
+			// (1) 裡面的屬性或者方法我們採取鍵值對的形式 鍵-屬性名 : 值-屬性值
+			// (2) 多個屬性名，中間用逗號隔開
+			// (3) 方法冒號後面跟的是一個匿名函數
+
+			// 2. 使用物件
+			// (1) 調用物件的屬性，我們採取 `物件名稱.屬性名稱 `   那個 . 我們理解成的
+			console.log(obj.uname);
+			// (2) 調用屬性還有一種方法  `物件名稱['屬性名稱']`
+			console.log(obj['age']);
+			// (3) 調用物件的方法 sayHi `物件名稱.方法名()`  -千萬別忘記添加小括號
+			obj.sayHi();
+		</script>
+	</head>
+	<body></body>
+</html>

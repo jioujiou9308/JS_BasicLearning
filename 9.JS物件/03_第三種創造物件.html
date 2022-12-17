@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			//  為什麼需要使用建構函式 - 第三種方法
+			// 就是因為我們前面兩種創建物件的方式只能一次撞見一個
+			var dh1 = {
+				name: 'steve',
+				age: 53,
+				sing: function () {
+					console.log('a');
+				},
+			};
+			var dh2 = {
+				name: 'sandy',
+				age: 13,
+				sing: function () {
+					console.log('b');
+				},
+			};
+
+			// 因為我們一次只能創建一個物件，裡面有很多的屬性行方法是大量相同的，我們只能複製
+			// 因此我們可以利用函數的方式，重複這些相同的代碼，這種函數就稱為 "建構函式"
+			// 又因為這個還數不一樣，裡面封裝的不是府通代碼，而物件
+			// 建構函式 : 就是把我物件裡面一些相同的屬性和方法抽象出來封裝到函數裡面
+			// -------------------------------------
+			// 以下開始創建，利用建構函式創建物件
+			// ex : 創建四大天王的物件 相同的屬性: 名字、年齡、性別 相同的方法: 唱歌
+			// 構造函數的語法格式
+
+			/* function 建構函式名字(實參) {
+				this.屬性 = 值;
+				this.方法 = function () {};
+			}
+			new 建構函式名字(); */
+			//  1. 建構函式 : 泛指某一大類
+			function Star(name, age, sex) {
+				(this.name = name),
+					(this.age = age),
+					(this.sex = sex),
+					(this.sing = function (sang) {
+						console.log(sang);
+					});
+			}
+			var person1 = new Star('劉德華', 18, '男'); //調用函數返回的是一個物件
+			console.log(person1);
+			console.log(typeof person1);
+			console.log(person1.name);
+			console.log(person1.age);
+			console.log(person1['sex']);
+			person1.sing('等到花兒都蟹了');
+
+			var person2 = new Star('張學友', 30, '男生');
+			console.log(person2);
+			console.log(person2.name);
+			console.log(person2.age);
+			console.log(person2['sex']);
+			person2.sing('咖啡');
+
+			//  1. 建構函式名自首字母要大寫
+			//  2. 建構函式不需要return 就可以返還結果
+			//  3. 調用建構還是必須使用 new
+			//  4. 只又使用 new Star() 調用函數就創建一個物件
+			//  5. 建構函式的屬性都必須添加 this
+			//  6. 我們創建構造函式的實力對象，這個過程稱作為物件實體化
+		</script>
+	</head>
+	<body></body>
+</html>
